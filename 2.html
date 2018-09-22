@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - CSS</title>
+  <meta charset="utf-8">
+  <style>
+   body {
+     margin: 0px;
+   }
+   a {
+     color: black;
+     text-decoration: none;
+   }
+   h1 {
+     font-size: 45px;
+     text-align: center;
+     text-shadow: 2px 2px green;
+     text-decoration-line:overline;
+     text-decoration-style:wavy;
+     border-bottom: 2px solid gray;
+     margin:0;
+     padding:20px;
+   }
+   #pcmenu {
+     border-right: 1px outset gray;
+     width:100px;
+     margin:0px;
+     padding:20px 33px 800px 33px;
+   }
+   #grid{
+     display: grid;
+     grid-template-columns: 164px 1fr;
+   }
+   #article{
+     padding-left: 27px;
+     padding-top: 6px;
+   }
+   #mobile{
+     display:none;
+   }
+   @media(Max-width:800px){
+     #grid{
+       display:block;
+     }
+     #pcmenu{
+       display:none;
+     }
+     #mobile{
+       display: grid;
+       width:213px;
+       height: 25px;
+       grid-template-columns: 1fr 1fr 1fr;
+       text-align: center;
+       border-right: none;
+       border-bottom: 1px solid gray;
+       margin:0 0 0 0;
+       padding: 0 40% 0 35%;
+       list-style: none;
+       background-color: black;
+     }
+     #mobile li{
+       border: 1px solid black;
+     }
+   }
+  </style>
+</head>
+<body>
+  <h1><a href="index.html">NEVER</a></h1>
+    <div id="grid">
+      <nav>
+        <ol id="mobile">
+          <li><a style="color:white;"href="1.html">HTML</a></li>
+          <li><a style="color:white;"href="2.html">CSS</a></li>
+          <li><a style="color:white;"href="3.html">JavaScript</a></li>
+        </ol>
+        <ol id="pcmenu">
+          <li><a style="color:red;"href="1.html">HTML</a></li>
+          <li><a style="color:red;"href="2.html">CSS</a></li>
+          <li><a style="color:red;"href="3.html">JavaScript</a></li>
+        </ol>
+      </nav>
+          <div id="article">
+            <h2>CSS</h2>
+            <p>
+              Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+              CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+              Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4]
+              The  name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+              The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.[5]
+              In addition to HTML, other markup languages support the use of CSS, including XHTML, plain XML, SVG, and XUL.
+            </p>
+          </div>
+      </div>
+</body>
+</html>
