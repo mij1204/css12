@@ -3,66 +3,8 @@
 <head>
   <title>WEB1 - HTML</title>
   <meta charset="utf-8">
-  <style>
-   body {
-     margin: 0px;
-   }
-   a {
-     color: black;
-     text-decoration: none;
-   }
-   h1 {
-     font-size: 45px;
-     text-align: center;
-     text-shadow: 2px 2px green;
-     text-decoration-line:overline;
-     text-decoration-style:wavy;
-     border-bottom: 2px solid gray;
-     margin:0;
-     padding:20px;
-   }
-   #pcmenu {
-     border-right: 1px outset gray;
-     width:100px;
-     margin:0px;
-     padding:20px 33px 800px 33px;
-   }
-   #grid{
-     display: grid;
-     grid-template-columns: 164px 1fr;
-   }
-   #article{
-     padding-left: 27px;
-     padding-top: 6px;
-   }
-   #mobile{
-     display:none;
-   }
-   @media(Max-width:800px){
-     #grid{
-       display:block;
-     }
-     #pcmenu{
-       display:none;
-     }
-     #mobile{
-       display: grid;
-       width:213px;
-       height: 25px;
-       grid-template-columns: 1fr 1fr 1fr;
-       text-align: center;
-       border-right: none;
-       border-bottom: 1px solid gray;
-       margin:0 0 0 0;
-       padding: 0 40% 0 35%;
-       list-style: none;
-       background-color: black;
-     }
-     #mobile li{
-       border: 1px solid black;
-     }
-   }
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1><a href="index.html">NEVER</a></h1>
@@ -80,8 +22,8 @@
         </ol>
       </nav>
           <div id="article">
-            <h2>HTML이란 무엇인가?</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jSJM9iOiQ1g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h2>HTML</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/jSJM9iOiQ1g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <p><a href="http://naver.com"target="_blank" title="네이버임">Hypertext Markup Language</a> (HTML) is the standard Markup
               <br>language for <strong>creating web pages</strong> and1 <u>web</u> applications</p>
               <p style="margin-top:45px;">
@@ -91,8 +33,8 @@
               page.<br>it provides a means to create structured documents by denoting
               structural semantics for text such as headlings, paragraphs, lists, links, quotes
               and other items. HTML elements are delineated by tags, written using angle brackets.
-             </p>
-              <img src="coding.jpg" width="100%">
+              </p>
+              <img src="coding.jpg" width="100%" style="margin-bottom: 20px">
                 <div id="disqus_thread"></div>
                 <script>
                   /**
@@ -113,6 +55,6 @@
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
           </div>
-      </div>
- </body>
+    </div>
+</body>
 </html>
